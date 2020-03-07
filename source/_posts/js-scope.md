@@ -1,6 +1,15 @@
 ---
-title: js作用域
+title: js重点概念讲解
+
+categories: 
+- js
+tags:
+- 变量声明
+- this
+- scope and 闭包
 ---
+重点讲解了如原型、作用域、执行上下文、变量对象、this、闭包、按值传递、call、apply、bind、new、继承等 JS 语言中的比较难懂的概念。
+<!--more-->
 
 ### 一、变量声明
 #### 1.1、大部分编程语言都是先声明变量再使用变量，但JS中有时候并非如此。例如：
@@ -11,7 +20,7 @@ var test = 0;
 ```
 
 我们可以看到上面的代码是一个合法的输出。输出值为"underfined",而不是报错“Uncaught ReferenceError: test is not defined”. 为何会产生这样的结果？
-<!--more-->
+
 
 #### 1.2、先了解下几个js的变量声明规则：
 - 变量声明，不管在哪里发生（声明），都会在任意代码执行前处理。（Variable declarations, wherever they occur, are processed before any code is executed. ）。
