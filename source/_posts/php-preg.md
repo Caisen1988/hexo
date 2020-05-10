@@ -1,5 +1,5 @@
 ---
-title: PHP正则表达式相关知识终结
+title: PHP正则表达式相关知识总结
 categories: 
 - PHP
 ---
