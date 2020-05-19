@@ -1,5 +1,11 @@
+---
+title: Laravel HTTP请求过程
+categories:
+- PHP
+---
 
 通过理解 Laravel HTTP请求流程，不仅能够增加开发 Laravel 项目的自信心。还有助于调试项目、定位和解决bug。在某些场景下可以快速的解决问题
+<!--more-->
 
 #### Laravel 执行过程
 ![Laravel](
