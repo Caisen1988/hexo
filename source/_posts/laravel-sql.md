@@ -7,7 +7,7 @@ categories:
 **一、insert**
 1、插入单条：
 `DB::table('users')->insert(['name' => 'test', 'age' => 18])`
-
+<!--more-->
 2、插入多条：
 
 ```
