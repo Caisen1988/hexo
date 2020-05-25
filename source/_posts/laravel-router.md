@@ -69,7 +69,7 @@ Route::get('page/{id}/{slug}', function ($id, $slug) {
 如果传入的路由参数与指定正则不匹配，则会返回 404 页面：
 ![](https://imgkr.cn-bj.ufileos.com/f695f157-2279-4625-b270-414784c203d0.png)
 #### 路由命名，视图中使用路由
-在应用其他地方引用路由的最简单的方式就是通过定义路由的第一个路径参数，你可以在视图中通过辅助函数 url() 来引用指定路由，该函数会为传入路径加上完整的域名前缀，所以 url('/') 对应的输出是 http://blog.test。你可以在视图文件中这么使用：
+在应用其他地方引用路由的最简单的方式就是通过定义路由的第一个路径参数，你可以在视图中通过辅助函数 url() 来引用指定路由，该函数会为传入路径加上完整的域名前缀，所以 url('/') 对应的输出是 localhost.test。你可以在视图文件中这么使用：
 ```
 <a href="{{ url('/') }}">
 ```
@@ -138,7 +138,7 @@ Route::domain('admin.blog.test')->group(function () {
     });
 });
 ```
-另一个是通过参数方式设置子域名，适用于网站拥有多租户的场景（比如天猫，顶级知名商家拥有自己独立的子域名，如 https://xiaomi.tmall.com）：
+另一个是通过参数方式设置子域名，适用于网站拥有多租户的场景（比如天猫，顶级知名商家拥有自己独立的子域名，如 xiaomi.tmall.com）：
 ```
 Route::domain('{account}.blog.test')->group(function () {
     Route::get('/', function ($account) {
